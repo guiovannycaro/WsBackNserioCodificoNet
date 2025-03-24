@@ -1,0 +1,6 @@
+@WsBackNserioCodifico_HostAddress = http://localhost:8090
+
+GET {{WsBackNserioCodifico_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

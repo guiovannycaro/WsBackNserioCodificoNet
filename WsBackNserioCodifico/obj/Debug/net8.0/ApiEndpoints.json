@@ -1,0 +1,764 @@
+[
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.CategoriesController",
+    "Method": "findCategoriasById",
+    "RelativePath": "nserio/AppAdmin/Categories/BuscarCategoriesById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.CategoriesController",
+    "Method": "findCategoriasByName",
+    "RelativePath": "nserio/AppAdmin/Categories/BuscarCategoriesByName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.CategoriesController",
+    "Method": "DeleteCategory",
+    "RelativePath": "nserio/AppAdmin/Categories/DeleteCategories",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.CategoriesController",
+    "Method": "CreateCategory",
+    "RelativePath": "nserio/AppAdmin/Categories/InsertarCategories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "WsBackNserioCodifico.Modelos.Categories",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.CategoriesController",
+    "Method": "listaCategorias",
+    "RelativePath": "nserio/AppAdmin/Categories/ListarCategories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.CategoriesController",
+    "Method": "UpdateCategory",
+    "RelativePath": "nserio/AppAdmin/Categories/UpdateCategories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "WsBackNserioCodifico.Modelos.Categories",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.CustomersController",
+    "Method": "findCategoriasById",
+    "RelativePath": "nserio/AppAdmin/Customers/BuscarCustomersById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.CustomersController",
+    "Method": "findCategoriasByName",
+    "RelativePath": "nserio/AppAdmin/Customers/BuscarCustomersByName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.CustomersController",
+    "Method": "DeleteCategory",
+    "RelativePath": "nserio/AppAdmin/Customers/DeleteCustomers",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.CustomersController",
+    "Method": "CreateCategory",
+    "RelativePath": "nserio/AppAdmin/Customers/InsertarCustomers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "WsBackNserioCodifico.Modelos.Customers",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.CustomersController",
+    "Method": "listaCustomers",
+    "RelativePath": "nserio/AppAdmin/Customers/ListarCustomers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.CustomersController",
+    "Method": "UpdateCategory",
+    "RelativePath": "nserio/AppAdmin/Customers/UpdateCustomers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "WsBackNserioCodifico.Modelos.Customers",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.EmployeesController",
+    "Method": "findCategoriasById",
+    "RelativePath": "nserio/AppAdmin/Employees/BuscarEmployeesById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.EmployeesController",
+    "Method": "findCategoriasByName",
+    "RelativePath": "nserio/AppAdmin/Employees/BuscarEmployeesByName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.EmployeesController",
+    "Method": "DeleteCategory",
+    "RelativePath": "nserio/AppAdmin/Employees/DeleteEmployees",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.EmployeesController",
+    "Method": "CreateCategory",
+    "RelativePath": "nserio/AppAdmin/Employees/InsertarEmployees",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "WsBackNserioCodifico.Modelos.Employees",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.EmployeesController",
+    "Method": "listaEmployees",
+    "RelativePath": "nserio/AppAdmin/Employees/ListarEmployees",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.EmployeesController",
+    "Method": "UpdateCategory",
+    "RelativePath": "nserio/AppAdmin/Employees/UpdateEmployees",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "WsBackNserioCodifico.Modelos.Employees",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.OrderDetailsController",
+    "Method": "buscarDetailsOrderById",
+    "RelativePath": "nserio/AppAdmin/OrderDetails/BuscarDetailsOrderById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.OrderDetailsController",
+    "Method": "findCategoriasById",
+    "RelativePath": "nserio/AppAdmin/OrderDetails/BuscarOrderDetailsById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.OrderDetailsController",
+    "Method": "findCategoriasByName",
+    "RelativePath": "nserio/AppAdmin/OrderDetails/BuscarOrderDetailsByName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.OrderDetailsController",
+    "Method": "DeleteCategory",
+    "RelativePath": "nserio/AppAdmin/OrderDetails/DeleteOrderDetails",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.OrderDetailsController",
+    "Method": "CreateCategory",
+    "RelativePath": "nserio/AppAdmin/OrderDetails/InsertarOrderDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "WsBackNserioCodifico.Modelos.OrderDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.OrderDetailsController",
+    "Method": "listaOrderDetails",
+    "RelativePath": "nserio/AppAdmin/OrderDetails/ListarOrderDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.OrderDetailsController",
+    "Method": "UpdateCategory",
+    "RelativePath": "nserio/AppAdmin/OrderDetails/UpdateOrderDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "WsBackNserioCodifico.Modelos.OrderDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.OrderController",
+    "Method": "findOrdersById",
+    "RelativePath": "nserio/AppAdmin/Orders/BuscarOrdersById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.OrderController",
+    "Method": "findOrdersByName",
+    "RelativePath": "nserio/AppAdmin/Orders/BuscarOrdersByName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.OrderController",
+    "Method": "buscarOrdersCustomersById",
+    "RelativePath": "nserio/AppAdmin/Orders/BuscarOrdersCustomersById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.OrderController",
+    "Method": "DeleteCategory",
+    "RelativePath": "nserio/AppAdmin/Orders/DeleteOrders",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.OrderController",
+    "Method": "CreateCategory",
+    "RelativePath": "nserio/AppAdmin/Orders/InsertarOrders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "WsBackNserioCodifico.Modelos.Orders",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.OrderController",
+    "Method": "listaOrders",
+    "RelativePath": "nserio/AppAdmin/Orders/ListarOrders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.OrderController",
+    "Method": "UpdateCategory",
+    "RelativePath": "nserio/AppAdmin/Orders/UpdateOrders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "WsBackNserioCodifico.Modelos.Orders",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.PredictionController",
+    "Method": "listaPredictions",
+    "RelativePath": "nserio/AppAdmin/Prediction/ListarPrediction",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.ProductsController",
+    "Method": "findCategoriasById",
+    "RelativePath": "nserio/AppAdmin/Products/BuscarProductsById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.ProductsController",
+    "Method": "findCategoriasByName",
+    "RelativePath": "nserio/AppAdmin/Products/BuscarProductsByName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.ProductsController",
+    "Method": "DeleteCategory",
+    "RelativePath": "nserio/AppAdmin/Products/DeleteProducts",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.ProductsController",
+    "Method": "CreateCategory",
+    "RelativePath": "nserio/AppAdmin/Products/InsertarProducts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "WsBackNserioCodifico.Modelos.Products",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.ProductsController",
+    "Method": "listaProducts",
+    "RelativePath": "nserio/AppAdmin/Products/ListarProducts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.ProductsController",
+    "Method": "UpdateCategory",
+    "RelativePath": "nserio/AppAdmin/Products/UpdateProducts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "WsBackNserioCodifico.Modelos.Products",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.ShippersController",
+    "Method": "findShippersById",
+    "RelativePath": "nserio/AppAdmin/Shippers/BuscarShippersById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.ShippersController",
+    "Method": "findShippersByName",
+    "RelativePath": "nserio/AppAdmin/Shippers/BuscarShippersByName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.ShippersController",
+    "Method": "DeleteShippers",
+    "RelativePath": "nserio/AppAdmin/Shippers/DeleteShippers",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.ShippersController",
+    "Method": "CreateShippers",
+    "RelativePath": "nserio/AppAdmin/Shippers/InsertarShippers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "WsBackNserioCodifico.Modelos.Shippers",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.ShippersController",
+    "Method": "listaShippers",
+    "RelativePath": "nserio/AppAdmin/Shippers/ListarShippers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.ShippersController",
+    "Method": "UpdateShippers",
+    "RelativePath": "nserio/AppAdmin/Shippers/UpdateShippers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "WsBackNserioCodifico.Modelos.Shippers",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.SuppliersController",
+    "Method": "findSuppliersById",
+    "RelativePath": "nserio/AppAdmin/Suppliers/BuscarSuppliersById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.SuppliersController",
+    "Method": "findSuppliersByName",
+    "RelativePath": "nserio/AppAdmin/Suppliers/BuscarSuppliersByName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.SuppliersController",
+    "Method": "DeleteSuppliers",
+    "RelativePath": "nserio/AppAdmin/Suppliers/DeleteSuppliers",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.SuppliersController",
+    "Method": "CreateSuppliers",
+    "RelativePath": "nserio/AppAdmin/Suppliers/InsertarSuppliers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "WsBackNserioCodifico.Modelos.Suppliers",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.SuppliersController",
+    "Method": "listaSuppliers",
+    "RelativePath": "nserio/AppAdmin/Suppliers/ListarSuppliers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.SuppliersController",
+    "Method": "UpdateShippers",
+    "RelativePath": "nserio/AppAdmin/Suppliers/UpdateSuppliers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "WsBackNserioCodifico.Modelos.Suppliers",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
