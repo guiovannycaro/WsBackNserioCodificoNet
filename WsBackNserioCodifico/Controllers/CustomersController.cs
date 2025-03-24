@@ -268,5 +268,41 @@ namespace WsBackNserioCodifico.Controllers
             }
         }
 
+
+
+
+
+        [HttpGet("BuscarNombreCustomersById")]
+        public IActionResult buscarNombreCustomersById([FromQuery] int dato)
+        {
+            try
+            {
+                var categories = _servicio.buscarNombreRegistroPorId(dato);
+
+                if (categories == null)
+                {
+
+                    return NotFound(new Respuesta
+                    {
+                        StatusCode = 404,
+                        Message = "error",
+                        Description = "El registro no esta en la base de datos."
+                    });
+
+                }
+                return Ok(categories);
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new Respuesta
+                {
+                    StatusCode = 500,
+                    Message = "error",
+                    Description = "Error al obtener el registro"
+                });
+            }
+        }
+
     }
 }

@@ -309,6 +309,43 @@ namespace WsBackNserioCodifico.dao
 
         }
 
-      
+
+
+
+        public string buscarNombreRegistroPorId(int id)
+        {
+
+            string nombreCliente = "";
+
+            string sql = " select companyname from Sales.Customers"
+                 + " WHERE custid = @CategoryId";
+
+            Customers categorias = null;
+
+            var parametros = new Dictionary<string, object>
+            {
+              { "@CategoryId", id }
+            };
+
+            using (SqlDataReader dr = _conectionString.ExecuteSelectBd(sql, parametros))
+            {
+                while (dr.Read())
+                {
+
+
+                    nombreCliente = dr.IsDBNull(dr.GetOrdinal("companyname")) ? string.Empty : dr.GetString(dr.GetOrdinal("companyname"));
+ 
+
+                   
+                }
+            }
+
+            return nombreCliente;
+
+
+        }
+
+
+
     }
 }

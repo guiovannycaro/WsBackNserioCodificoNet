@@ -8,7 +8,7 @@ namespace WsBackNserioCodifico.interfaces
 
         List<Predictions> devolverTodos();
 
-        public bool agregarRegistro(Predictions datos);
+        public bool agregarRegistro(NOrderDetail datos);
         public bool actualizarRegistros(Predictions datos);
 
         public bool eliminarRegistro(int id);

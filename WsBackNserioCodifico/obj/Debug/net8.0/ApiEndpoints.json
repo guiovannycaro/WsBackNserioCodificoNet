@@ -123,6 +123,22 @@
   },
   {
     "ContainingType": "WsBackNserioCodifico.Controllers.CustomersController",
+    "Method": "buscarNombreCustomersById",
+    "RelativePath": "nserio/AppAdmin/Customers/BuscarNombreCustomersById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dato",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.CustomersController",
     "Method": "DeleteCategory",
     "RelativePath": "nserio/AppAdmin/Customers/DeleteCustomers",
     "HttpMethod": "DELETE",
@@ -476,6 +492,22 @@
       {
         "Name": "datos",
         "Type": "WsBackNserioCodifico.Modelos.Orders",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WsBackNserioCodifico.Controllers.PredictionController",
+    "Method": "createNewOrdenDetails",
+    "RelativePath": "nserio/AppAdmin/Prediction/createNewOrdenDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "WsBackNserioCodifico.Modelos.NOrderDetail",
         "IsRequired": true
       }
     ],

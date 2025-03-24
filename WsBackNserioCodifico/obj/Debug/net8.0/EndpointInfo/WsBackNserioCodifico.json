@@ -283,6 +283,28 @@
         }
       }
     },
+    "/nserio/AppAdmin/Customers/BuscarNombreCustomersById": {
+      "get": {
+        "tags": [
+          "Customers"
+        ],
+        "parameters": [
+          {
+            "name": "dato",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/nserio/AppAdmin/Employees/ListarEmployees": {
       "get": {
         "tags": [
@@ -750,6 +772,37 @@
         "tags": [
           "Prediction"
         ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/nserio/AppAdmin/Prediction/createNewOrdenDetails": {
+      "post": {
+        "tags": [
+          "Prediction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NOrderDetail"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NOrderDetail"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/NOrderDetail"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -1301,6 +1354,84 @@
             "nullable": true
           },
           "mgrid": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "NOrderDetail": {
+        "type": "object",
+        "properties": {
+          "orderid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "custid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "orderdate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "requireddate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "shippeddate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "shipperid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "freight": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "shipname": {
+            "type": "string",
+            "nullable": true
+          },
+          "shipaddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "shipcity": {
+            "type": "string",
+            "nullable": true
+          },
+          "shipregion": {
+            "type": "string",
+            "nullable": true
+          },
+          "shippostalcode": {
+            "type": "string",
+            "nullable": true
+          },
+          "shipcountry": {
+            "type": "string",
+            "nullable": true
+          },
+          "productid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "unitprice": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "qty": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "discount": {
             "type": "integer",
             "format": "int32"
           }

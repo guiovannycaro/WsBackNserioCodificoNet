@@ -3,8 +3,10 @@ using System.Data.SqlClient;
 using System.Text.Json;
 using WsBackNserioCodifico.interfaces;
 using WsBackNserioCodifico.Modelos;
-
+using System.Globalization;
 using System.Runtime.InteropServices.JavaScript;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
 
 
 namespace WsBackNserioCodifico.dao
@@ -59,14 +61,134 @@ namespace WsBackNserioCodifico.dao
             return list;
         }
 
+
+        public bool agregarRegistro(NOrderDetail datos)
+        {
+
+            bool respuesta;
+
+          
+            string formatoFecha = "yyyy-MM-ddTHH:mm:ss.fffZ";
+
+            string orderdateString = ""+datos.orderdate;
+            string requireddateString = "" + datos.requireddate;
+            string shippeddateString = "" + datos.shippeddate;
+
+            DateTime orderdates = DateTime.Parse(orderdateString, null, DateTimeStyles.AssumeUniversal);
+            Console.WriteLine("Fecha en UTC: " + orderdates.ToString("yyyy-MM-dd HH:mm:ss.fff"));
+
+            DateTime requireddates = DateTime.Parse(requireddateString, null, DateTimeStyles.AssumeUniversal);
+            Console.WriteLine("Fecha en UTC: " + requireddates.ToString("yyyy-MM-dd HH:mm:ss.fff"));
+
+            DateTime shippeddate = DateTime.Parse(shippeddateString, null, DateTimeStyles.AssumeUniversal);
+            Console.WriteLine("Fecha en UTC: " + requireddates.ToString("yyyy-MM-dd HH:mm:ss.fff"));
+
+
+            Console.WriteLine(datos.empid); Console.WriteLine(datos.shipperid);
+
+            string sql = "INSERT INTO Sales.Orders" +
+               " (custid, empid,orderdate,requireddate,shippeddate," +
+               " shipperid,freight,shipname,shipaddress,shipcity," +
+               " shipregion,shippostalcode,shipcountry) " +
+               "VALUES" +
+               " (@custid, @empid,@orderdate,@requireddate,@shippeddate," +
+               " @shipperid,@freight,@shipname,@shipaddress,@shipcity," +
+               " @shipregion,@shippostalcode,@shipcountry) ";
+
+            var parameters = new Dictionary<string, object>
+    {
+        { "@custid", datos.custid },
+        { "@empid", datos.empid },
+        { "@orderdate", orderdates },
+        { "@requireddate", requireddates },
+        { "@shippeddate", shippeddate },
+        { "@shipperid", datos.shipperid },
+        { "@freight", datos.freight },
+        { "@shipname", datos.shipname },
+        { "@shipaddress", datos.shipaddress },
+        { "@shipcity", datos.shipcity },
+         { "@shipregion", datos.shipregion },
+        { "@shippostalcode", datos.shippostalcode },
+        { "@shipcountry", datos.shipcountry }
+            };
+            int orderid = 0;
+
+            
+
+             _conectionString.ExecuteScalarBd(sql, parameters);
+
+            orderid = CustomerEmplRegistroPorId( datos.empid, datos.custid);
+
+            Console.WriteLine(orderid);
+
+            if (orderid > 0)
+            {
+                string sqld = "INSERT INTO Sales.OrderDetails " +
+                           "(orderid, productid, unitprice, qty, discount) " +
+                           "VALUES (@Orderid, @productid, @unitprice, @qty, @discount);";
+
+                var parametersd = new Dictionary<string, object>
+    {
+        { "@Orderid", orderid },
+        { "@productid", datos.productid },
+        { "@unitprice", datos.unitprice },
+        { "@qty", datos.qty },
+        { "@discount", datos.discount }
+    };
+
+                respuesta = _conectionString.ExecuteUpdateBd(sqld, parametersd);
+
+                if (respuesta)
+                {
+                    respuesta = true;
+                }
+                else
+                {
+                    respuesta = false;
+                }
+              
+
+            }
+            else {
+                respuesta = false;
+            }
+
+            return respuesta;
+        }
+
         public bool actualizarRegistros(Predictions datos)
         {
             throw new NotImplementedException();
         }
 
-        public bool agregarRegistro(Predictions datos)
+
+
+        public int CustomerEmplRegistroPorId(int dato1,int dato2)
         {
-            throw new NotImplementedException();
+            string sql = " select TOP 1 orderid from Sales.Orders"
+                 + " WHERE custid = @CustId and empid = @EmpId" +
+                 " ORDER BY orderid DESC";
+
+            int dato = 0;
+
+            var parametros = new Dictionary<string, object>
+            {
+              { "@EmpId", dato1 },
+              { "@CustId", dato2 }
+            };
+
+            using (SqlDataReader dr = _conectionString.ExecuteSelectBd(sql, parametros))
+            {
+                while (dr.Read())
+                {
+
+                    dato = dr.GetInt32(dr.GetOrdinal("orderid"));
+                }
+
+                Console.WriteLine("id tabla orden " + dato);
+            }
+
+            return dato;
         }
 
         public Predictions buscarRegistroNombre(string datos)

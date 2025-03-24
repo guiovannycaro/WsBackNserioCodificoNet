@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Data.SqlClient;
 using WsBackNserioCodifico.dao;
 using WsBackNserioCodifico.Modelos;
 
@@ -47,5 +48,55 @@ namespace WsBackNserioCodifico.Controllers
                 });
             }
         }
+
+
+        [HttpPost("createNewOrdenDetails")]
+        public IActionResult createNewOrdenDetails(NOrderDetail datos)
+        {
+            try
+            {
+                bool respuesta = _servicio.agregarRegistro(datos);
+
+                if (respuesta)
+                {
+                    return Ok(new Respuesta
+                    {
+                        StatusCode = 200,
+                        Message = "success",
+                        Description = "Registro insertado correctamente.",
+                    });
+                }
+                else
+                {
+                    return StatusCode(500, new Respuesta
+                    {
+                        StatusCode = 500,
+                        Message = "error",
+                        Description = "Registro no insertada correctamente.",
+                    });
+
+                }
+            }
+            catch (SqlException ex)
+            {
+                return StatusCode(400, new Respuesta
+                {
+                    StatusCode = 400,
+                    Message = "error",
+                    Description = "Error al insertar el registro"
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new Respuesta
+                {
+                    StatusCode = 500,
+                    Message = "error",
+                    Description = "Error interno al insertar el registro"
+                });
+            }
+        }
+
+
     }
 }

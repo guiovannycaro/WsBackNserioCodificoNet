@@ -68,6 +68,7 @@ E:\Programacion\opt\VisualStudioProjects\WsBackNserioCodifico\WsBackNserioCodifi
 E:\Programacion\opt\VisualStudioProjects\WsBackNserioCodifico\WsBackNserioCodifico\obj\Debug\net8.0\WsBackNserioCodifico.csproj.CoreCompileInputs.cache
 E:\Programacion\opt\VisualStudioProjects\WsBackNserioCodifico\WsBackNserioCodifico\obj\Debug\net8.0\WsBackNserioCodifico.MvcApplicationPartsAssemblyInfo.cs
 E:\Programacion\opt\VisualStudioProjects\WsBackNserioCodifico\WsBackNserioCodifico\obj\Debug\net8.0\WsBackNserioCodifico.MvcApplicationPartsAssemblyInfo.cache
+E:\Programacion\opt\VisualStudioProjects\WsBackNserioCodifico\WsBackNserioCodifico\obj\Debug\net8.0\WsBackNserioCodifico.sourcelink.json
 E:\Programacion\opt\VisualStudioProjects\WsBackNserioCodifico\WsBackNserioCodifico\obj\Debug\net8.0\scopedcss\bundle\WsBackNserioCodifico.styles.css
 E:\Programacion\opt\VisualStudioProjects\WsBackNserioCodifico\WsBackNserioCodifico\obj\Debug\net8.0\staticwebassets.build.json
 E:\Programacion\opt\VisualStudioProjects\WsBackNserioCodifico\WsBackNserioCodifico\obj\Debug\net8.0\staticwebassets.development.json

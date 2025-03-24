@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WsBackNserioCodifico")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5b369f95695b046ec240de0b15e1f70bc7fee1a")]
 [assembly: System.Reflection.AssemblyProductAttribute("WsBackNserioCodifico")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WsBackNserioCodifico")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

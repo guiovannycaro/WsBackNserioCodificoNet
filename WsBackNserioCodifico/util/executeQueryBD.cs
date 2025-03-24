@@ -77,5 +77,47 @@ namespace BacktecnoFactApi.Infraestructura.Util
                 return false;
             }
         }
+
+
+        public int ExecuteScalarBd(string sql, Dictionary<string, object> parameters)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(ConnectionFactory.connectToBD()))
+                {
+                    connection.Open();
+                    using (var cmd = new SqlCommand(sql, connection))
+                    {
+                        if (parameters != null)
+                        {
+                            foreach (var param in parameters)
+                            {
+                                cmd.Parameters.AddWithValue(param.Key, param.Value ?? DBNull.Value);
+                            }
+                        }
+
+                        // Ejecutamos ExecuteScalar para obtener el primer valor del resultado
+                        var result = cmd.ExecuteScalar();
+
+                        // Si el resultado no es DBNull, lo convertimos y lo retornamos
+                        if (result != null && result != DBNull.Value)
+                        {
+                            return Convert.ToInt32(result); // Convertimos el resultado a un entero
+                        }
+                        return 0; // Si no se obtiene un valor válido, retornamos 0 (o puedes lanzar una excepción si lo prefieres)
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                Console.Error.WriteLine($"SqlException: {ex.Message}");
+                return 0; // Retornar 0 si hay un error SQL
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"Exception: {ex.Message}");
+                return 0; // Retornar 0 si hay un error general
+            }
+        }
     }
 }
